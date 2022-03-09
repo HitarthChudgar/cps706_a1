@@ -1,6 +1,7 @@
 public enum ServerCommands {
     GET_DATE("getDate"),
-    GET_TIME("getTime");
+    GET_TIME("getTime"),
+    INVALID_COMMAND("invalid-command");
 
     private final String command;
 

@@ -45,7 +45,7 @@ class Server {
                     out.println(df.format(t));
 
                 } else {
-                    out.println("invalid-command");
+                    out.println(ServerCommands.INVALID_COMMAND.toString());
                     System.out.println("Invalid command received from client");
                 }
                 out.close();

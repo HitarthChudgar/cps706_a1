@@ -73,7 +73,7 @@ class Client {
     }
 
     public static void verifyValidCommand(String serverResponse) throws InvalidClientCommandException {
-        if (serverResponse.equals("invalid-command")) {
+        if (serverResponse.equals(ServerCommands.INVALID_COMMAND.toString())) {
             throw new InvalidClientCommandException("Invalid command from client, must be either getTime or getData");
         }
     }
